@@ -973,11 +973,13 @@ graph LR
     subgraph Original ["Original List"]
         OA["arr pointer"]
         OS["size = 5"]
+        OI["idx = 3"]
     end
 
     subgraph Copy ["Copy (deep)"]
         CA["arr pointer"]
         CS["size = 5"]
+        CI["idx = 3"]
     end
 
     OM["[3, 2, 5, 4]"]
@@ -994,7 +996,9 @@ graph LR
 
     %% Metadata
     style OS fill:#4CAF50,stroke:#000,stroke-width:2px,color:#fff,font-weight:bold
+    style OI fill:#4CAF50,stroke:#000,stroke-width:2px,color:#fff,font-weight:bold
     style CS fill:#4CAF50,stroke:#000,stroke-width:2px,color:#fff,font-weight:bold
+    style CI fill:#4CAF50,stroke:#000,stroke-width:2px,color:#fff,font-weight:bold
 
     %% Pointers
     style OA fill:#FF5722,stroke:#000,stroke-width:2px,color:#fff,font-weight:bold
@@ -1010,7 +1014,6 @@ graph LR
 ```
 
 Each object has its **own** memory. Safe.
-```
 
 **A common initial implementation:**
 ```cpp
