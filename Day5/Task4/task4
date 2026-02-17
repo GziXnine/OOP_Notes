@@ -1,0 +1,6 @@
+// 4. What is the difference between composition and inheritance? With example.
+/*
+Composition and inheritance are two fundamental concepts in object-oriented programming that allow for code reuse and the creation of complex systems.
+Inheritance -> توريث يعنى علاقة بين
+Composition -> يتكون من يتولد جواه
+*/
